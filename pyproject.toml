@@ -5,7 +5,7 @@ description = "My awesome test package"
 authors = ["GwynBleidD <gwynbleidd@pykonik.org>"]
 license = "GPL"
 readme = "README.md"
-packages = [{include = "random_name_nobody_will_ever_use_23"}]
+packages = [{include = "awesome_package"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
