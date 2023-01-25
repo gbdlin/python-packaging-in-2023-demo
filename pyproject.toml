@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "random-name-nobody-will-ever-use-23"
+version = "0.1.0"
+description = "My awesome test package"
+authors = ["GwynBleidD <gwynbleidd@pykonik.org>"]
+license = "GPL"
+readme = "README.md"
+packages = [{include = "random_name_nobody_will_ever_use_23"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.23.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
