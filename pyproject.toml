@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "random-name-nobody-will-ever-use-23"
-version = "0.1.0"
+version = "0.2.0"
 description = "My awesome test package"
 authors = ["GwynBleidD <gwynbleidd@pykonik.org>"]
 license = "GPL"
@@ -10,6 +10,10 @@ packages = [{include = "awesome_package"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "^2.23.0"
+aiohttp = { version = "^3.8.3", optional = true }
+
+[tool.poetry.extras]
+async = ["aiohttp"]
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
